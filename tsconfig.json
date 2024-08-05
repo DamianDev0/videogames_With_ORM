@@ -7,7 +7,14 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": true
+    "emitDecoratorMetadata": true,
+    "outDir": "./dist",                // Directorio de salida para los archivos transpilados
+    "rootDir": "./src",                // Directorio raíz de los archivos fuente
+    "baseUrl": "./",                   // Base URL para los módulos
+    "paths": {
+      "*": ["node_modules/*"]
+    }
   },
-  "include": ["src"]
+  "include": ["src"],                   
+  "exclude": ["node_modules"]  
 }
